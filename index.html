@@ -3,46 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Drum Kit</title>
   </head>
-  <body>
+  <style>
+    .playing {
+      transform: scale(1.2);
+      border-color: #ff0000;
+      box-shadow: 0 0 10px #ff0000;
+    }
+  </style>
+  <body class="bg-[url('./images/bg.png')] bg-no-repeat bg-cover min-h-screen">
     <main>
-      <section>
-        <div class="keys">
-          <div data-key="65" class="key">
-            <kbd>A</kbd>
+      <section class="text-white font-bold">
+        <h1 class="text-center text-6xl mt-4">DRUM KIT</h1>
+        <div
+          class="keys grid grid-cols-2 place-items-center gap-y-10 gap-x-1 mt-10"
+        >
+          <div
+            data-key="65"
+            class="key flex flex-col justify-center items-center border-4 w-1/4 border-yellow-400"
+          >
+            <kbd class="text-6xl">A</kbd>
             <span class="sound">clap</span>
           </div>
-          <div data-key="83" class="key">
-            <kbd>S</kbd>
+          <div
+            data-key="83"
+            class="key flex flex-col justify-center items-center border-4 w-1/4 border-yellow-400"
+          >
+            <kbd class="text-6xl">S</kbd>
             <span class="sound">hihat</span>
           </div>
-          <div data-key="68" class="key">
-            <kbd>D</kbd>
+          <div
+            data-key="68"
+            class="key flex flex-col justify-center items-center border-4 w-1/4 border-yellow-400"
+          >
+            <kbd class="text-6xl">D</kbd>
             <span class="sound">kick</span>
           </div>
-          <div data-key="70" class="key">
-            <kbd>F</kbd>
+          <div
+            data-key="70"
+            class="key flex flex-col justify-center items-center border-4 w-1/4 border-yellow-400"
+          >
+            <kbd class="text-6xl">F</kbd>
             <span class="sound">openhat</span>
           </div>
-          <div data-key="71" class="key">
-            <kbd>G</kbd>
+          <div
+            data-key="71"
+            class="key flex flex-col justify-center items-center border-4 w-1/4 border-yellow-400"
+          >
+            <kbd class="text-6xl">G</kbd>
             <span class="sound">boom</span>
           </div>
-          <div data-key="72" class="key">
-            <kbd>H</kbd>
+          <div
+            data-key="72"
+            class="key flex flex-col justify-center items-center border-4 w-1/4 border-yellow-400"
+          >
+            <kbd class="text-6xl">H</kbd>
             <span class="sound">ride</span>
           </div>
-          <div data-key="74" class="key">
-            <kbd>J</kbd>
+          <div
+            data-key="74"
+            class="key flex flex-col justify-center items-center border-4 w-1/4 border-yellow-400"
+          >
+            <kbd class="text-6xl">J</kbd>
             <span class="sound">snare</span>
           </div>
-          <div data-key="75" class="key">
-            <kbd>K</kbd>
+          <div
+            data-key="75"
+            class="key flex flex-col justify-center items-center border-4 w-1/4 border-yellow-400"
+          >
+            <kbd class="text-6xl">K</kbd>
             <span class="sound">tom</span>
           </div>
-          <div data-key="76" class="key">
-            <kbd>L</kbd>
+          <div
+            data-key="76"
+            class="key flex flex-col justify-center relative left-[50%] items-center border-4 w-1/4 border-yellow-400"
+          >
+            <kbd class="text-6xl">L</kbd>
             <span class="sound">tink</span>
           </div>
         </div>
